@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E860352E28E7173A00E2A921 /* EventListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E860352D28E7173A00E2A921 /* EventListView.swift */; };
+		E860353128E71EB400E2A921 /* EventTypePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E860353028E71EB400E2A921 /* EventTypePicker.swift */; };
+		E860353328E721CE00E2A921 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = E860353228E721CE00E2A921 /* Networking.swift */; };
+		E860353528E7222700E2A921 /* EventLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = E860353428E7222700E2A921 /* EventLink.swift */; };
+		E860353728E7224C00E2A921 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = E860353628E7224C00E2A921 /* Event.swift */; };
+		E860353B28E7229D00E2A921 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = E860353A28E7229D00E2A921 /* Day.swift */; };
+		E860353D28E722C400E2A921 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E860353C28E722C400E2A921 /* AppState.swift */; };
+		E860353F28E7238C00E2A921 /* String+Decoded.swift in Sources */ = {isa = PBXBuildFile; fileRef = E860353E28E7238C00E2A921 /* String+Decoded.swift */; };
+		E860354228E723E600E2A921 /* SampleFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E860354128E723E600E2A921 /* SampleFile.swift */; };
+		E897BBCB28EB0C9400DBFB00 /* EventListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E897BBCA28EB0C9400DBFB00 /* EventListCell.swift */; };
+		E8A2D94228EDADA30076CD2E /* DownloadData.json in Resources */ = {isa = PBXBuildFile; fileRef = E8A2D94128EDADA30076CD2E /* DownloadData.json */; };
+		E8B808CC28E9881A00DA9C53 /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B808CB28E9881900DA9C53 /* DatePickerView.swift */; };
+		E8B808CE28E98CA000DA9C53 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B808CD28E98CA000DA9C53 /* Constants.swift */; };
+		E8BAB47E28F05F3500F8FD9F /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BAB47D28F05F3500F8FD9F /* WebView.swift */; };
+		E8BEF46928EF192700644DEA /* EventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BEF46828EF192700644DEA /* EventDetailView.swift */; };
+		E8BEF46B28EF1A9100644DEA /* Color+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BEF46A28EF1A9100644DEA /* Color+Constants.swift */; };
 		E8CE202728E714B8006E5BC4 /* OnThisDay_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CE202628E714B8006E5BC4 /* OnThisDay_iOSApp.swift */; };
 		E8CE202928E714B8006E5BC4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CE202828E714B8006E5BC4 /* ContentView.swift */; };
 		E8CE202B28E714BA006E5BC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8CE202A28E714BA006E5BC4 /* Assets.xcassets */; };
@@ -14,7 +30,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E8CE202328E714B8006E5BC4 /* OnThisDay-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OnThisDay-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E860352D28E7173A00E2A921 /* EventListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListView.swift; sourceTree = "<group>"; };
+		E860353028E71EB400E2A921 /* EventTypePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTypePicker.swift; sourceTree = "<group>"; };
+		E860353228E721CE00E2A921 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		E860353428E7222700E2A921 /* EventLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventLink.swift; sourceTree = "<group>"; };
+		E860353628E7224C00E2A921 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		E860353A28E7229D00E2A921 /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		E860353C28E722C400E2A921 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		E860353E28E7238C00E2A921 /* String+Decoded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Decoded.swift"; sourceTree = "<group>"; };
+		E860354128E723E600E2A921 /* SampleFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleFile.swift; sourceTree = "<group>"; };
+		E897BBCA28EB0C9400DBFB00 /* EventListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListCell.swift; sourceTree = "<group>"; };
+		E8A2D94128EDADA30076CD2E /* DownloadData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DownloadData.json; sourceTree = "<group>"; };
+		E8B808CB28E9881900DA9C53 /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
+		E8B808CD28E98CA000DA9C53 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E8BAB47D28F05F3500F8FD9F /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		E8BEF46828EF192700644DEA /* EventDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailView.swift; sourceTree = "<group>"; };
+		E8BEF46A28EF1A9100644DEA /* Color+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Constants.swift"; sourceTree = "<group>"; };
+		E8CE202328E714B8006E5BC4 /* On This Day.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "On This Day.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8CE202628E714B8006E5BC4 /* OnThisDay_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnThisDay_iOSApp.swift; sourceTree = "<group>"; };
 		E8CE202828E714B8006E5BC4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E8CE202A28E714BA006E5BC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -32,6 +64,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E860352F28E71E8800E2A921 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E860353028E71EB400E2A921 /* EventTypePicker.swift */,
+				E8B808CB28E9881900DA9C53 /* DatePickerView.swift */,
+				E897BBCA28EB0C9400DBFB00 /* EventListCell.swift */,
+				E8BAB47D28F05F3500F8FD9F /* WebView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E860354028E7239B00E2A921 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E860353E28E7238C00E2A921 /* String+Decoded.swift */,
+				E8BEF46A28EF1A9100644DEA /* Color+Constants.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		E8CE201A28E714B8006E5BC4 = {
 			isa = PBXGroup;
 			children = (
@@ -43,7 +95,7 @@
 		E8CE202428E714B8006E5BC4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E8CE202328E714B8006E5BC4 /* OnThisDay-iOS.app */,
+				E8CE202328E714B8006E5BC4 /* On This Day.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,8 +103,12 @@
 		E8CE202528E714B8006E5BC4 /* OnThisDay-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				E8CE202628E714B8006E5BC4 /* OnThisDay_iOSApp.swift */,
-				E8CE202828E714B8006E5BC4 /* ContentView.swift */,
+				E860352F28E71E8800E2A921 /* Views */,
+				E8CE203528E714FD006E5BC4 /* Screens */,
+				E8CE203628E71508006E5BC4 /* Models */,
+				E8CE203728E7151C006E5BC4 /* Utility */,
+				E860354028E7239B00E2A921 /* Extensions */,
+				E8CE203428E714F5006E5BC4 /* App */,
 				E8CE202A28E714BA006E5BC4 /* Assets.xcassets */,
 				E8CE202C28E714BA006E5BC4 /* Preview Content */,
 			);
@@ -63,16 +119,56 @@
 			isa = PBXGroup;
 			children = (
 				E8CE202D28E714BA006E5BC4 /* Preview Assets.xcassets */,
+				E860354128E723E600E2A921 /* SampleFile.swift */,
+				E8A2D94128EDADA30076CD2E /* DownloadData.json */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E8CE203428E714F5006E5BC4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E8CE202628E714B8006E5BC4 /* OnThisDay_iOSApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E8CE203528E714FD006E5BC4 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				E8CE202828E714B8006E5BC4 /* ContentView.swift */,
+				E860352D28E7173A00E2A921 /* EventListView.swift */,
+				E8BEF46828EF192700644DEA /* EventDetailView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		E8CE203628E71508006E5BC4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E860353428E7222700E2A921 /* EventLink.swift */,
+				E860353628E7224C00E2A921 /* Event.swift */,
+				E860353A28E7229D00E2A921 /* Day.swift */,
+				E860353C28E722C400E2A921 /* AppState.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E8CE203728E7151C006E5BC4 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				E860353228E721CE00E2A921 /* Networking.swift */,
+				E8B808CD28E98CA000DA9C53 /* Constants.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E8CE202228E714B8006E5BC4 /* OnThisDay-iOS */ = {
+		E8CE202228E714B8006E5BC4 /* On This Day */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E8CE203128E714BA006E5BC4 /* Build configuration list for PBXNativeTarget "OnThisDay-iOS" */;
+			buildConfigurationList = E8CE203128E714BA006E5BC4 /* Build configuration list for PBXNativeTarget "On This Day" */;
 			buildPhases = (
 				E8CE201F28E714B8006E5BC4 /* Sources */,
 				E8CE202028E714B8006E5BC4 /* Frameworks */,
@@ -82,9 +178,9 @@
 			);
 			dependencies = (
 			);
-			name = "OnThisDay-iOS";
+			name = "On This Day";
 			productName = "OnThisDay-iOS";
-			productReference = E8CE202328E714B8006E5BC4 /* OnThisDay-iOS.app */;
+			productReference = E8CE202328E714B8006E5BC4 /* On This Day.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -115,7 +211,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E8CE202228E714B8006E5BC4 /* OnThisDay-iOS */,
+				E8CE202228E714B8006E5BC4 /* On This Day */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +223,7 @@
 			files = (
 				E8CE202E28E714BA006E5BC4 /* Preview Assets.xcassets in Resources */,
 				E8CE202B28E714BA006E5BC4 /* Assets.xcassets in Resources */,
+				E8A2D94228EDADA30076CD2E /* DownloadData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +234,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8BEF46928EF192700644DEA /* EventDetailView.swift in Sources */,
+				E897BBCB28EB0C9400DBFB00 /* EventListCell.swift in Sources */,
 				E8CE202928E714B8006E5BC4 /* ContentView.swift in Sources */,
+				E860354228E723E600E2A921 /* SampleFile.swift in Sources */,
+				E860353D28E722C400E2A921 /* AppState.swift in Sources */,
+				E8BEF46B28EF1A9100644DEA /* Color+Constants.swift in Sources */,
+				E860353328E721CE00E2A921 /* Networking.swift in Sources */,
+				E860353528E7222700E2A921 /* EventLink.swift in Sources */,
+				E860352E28E7173A00E2A921 /* EventListView.swift in Sources */,
+				E8B808CC28E9881A00DA9C53 /* DatePickerView.swift in Sources */,
+				E8B808CE28E98CA000DA9C53 /* Constants.swift in Sources */,
+				E8BAB47E28F05F3500F8FD9F /* WebView.swift in Sources */,
+				E860353128E71EB400E2A921 /* EventTypePicker.swift in Sources */,
+				E860353B28E7229D00E2A921 /* Day.swift in Sources */,
+				E860353728E7224C00E2A921 /* Event.swift in Sources */,
+				E860353F28E7238C00E2A921 /* String+Decoded.swift in Sources */,
 				E8CE202728E714B8006E5BC4 /* OnThisDay_iOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +387,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +417,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -329,7 +443,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E8CE203128E714BA006E5BC4 /* Build configuration list for PBXNativeTarget "OnThisDay-iOS" */ = {
+		E8CE203128E714BA006E5BC4 /* Build configuration list for PBXNativeTarget "On This Day" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E8CE203228E714BA006E5BC4 /* Debug */,
