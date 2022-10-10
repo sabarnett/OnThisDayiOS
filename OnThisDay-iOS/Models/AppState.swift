@@ -35,7 +35,6 @@ class AppState: ObservableObject {
     func dataFor(eventType: EventType?, date: String? = nil, searchText: String = "") -> [Event] {
         let requestedDate = date ?? today
         lastSelectedDate = requestedDate
-        print("Last selected date: \(lastSelectedDate)")
         
         if let day = days[requestedDate] {
             let events: [Event]

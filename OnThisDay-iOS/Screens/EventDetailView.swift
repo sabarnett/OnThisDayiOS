@@ -44,7 +44,7 @@ struct EventDetailView: View {
                         }
                     }
                 }
-                .frame(width: .infinity, height: 40)
+               .frame(height: 50)
                 
                 WebView(webView: model.webView)
                 HStack {
