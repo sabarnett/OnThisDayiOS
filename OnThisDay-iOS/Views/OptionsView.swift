@@ -31,7 +31,7 @@ struct OptionsView: View {
                 
                 Section(header: Text("Totals").bold()) {
                     HStack {
-                        Toggle(isOn: $showDeaths, label: {
+                        Toggle(isOn: $showTotals, label: {
                             Text("Show Event Counts")
                         })
                     }

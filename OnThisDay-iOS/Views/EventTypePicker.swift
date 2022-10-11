@@ -9,15 +9,27 @@ struct EventTypePicker: View {
     
     @EnvironmentObject var appState: AppState
     
+    @AppStorage("ShowBirths") var showBirths: Bool = true
+    @AppStorage("ShowDeaths") var showDeaths: Bool = true
+    @AppStorage("ShowTotals") var showTotals: Bool = true
+
     @SceneStorage("eventDate") var eventDate = ""
 
     @Binding var selectedEventType: EventType
+    
+    var allowedEventTypes: [EventType] {
+        EventType.allCases.filter({ event in
+            if event == .births && !showBirths { return false }
+            if event == .deaths && !showDeaths { return false }
+            return true
+        })
+    }
     
     var body: some View {
         Picker(
             selection: $selectedEventType,
             content: {
-                ForEach(EventType.allCases, id: \.rawValue) { event in
+                ForEach(allowedEventTypes, id: \.rawValue) { event in
                     Button(action: {}, label: {
                         Text(buttonCaption(for: event))
                     }).tag(event)
@@ -33,7 +45,7 @@ struct EventTypePicker: View {
         let baseLabel = "\(event.rawValue)"
         let count = eventCount(for: event)
         
-        if count == 0 {
+        if count == 0 || !showTotals {
             return baseLabel
         }
         return "\(baseLabel): \(eventCount(for: event))"

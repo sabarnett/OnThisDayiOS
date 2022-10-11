@@ -6,6 +6,7 @@ struct EventListView: View {
     @EnvironmentObject var appState: AppState
     
     @SceneStorage("eventDate") var eventDate = ""
+
     
     @State private var selectedEventType: EventType = .events
     @State private var showDatePicker: Bool = false
