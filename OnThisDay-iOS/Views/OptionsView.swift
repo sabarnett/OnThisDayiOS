@@ -1,6 +1,9 @@
 // Project: OnThisDay-iOS
 //
-//
+//  Allows the user to set the app options. This currently allows them to
+//  determine whether Births and Deaths are to be displayed and whether we
+//  include the count of the items for a specific view in the event type
+//  selector.
 //
 
 import SwiftUI
@@ -44,12 +47,9 @@ struct OptionsView: View {
                             Image("LaunchScreenLogo")
                                 .resizable()
                                 .frame(width: 200, height: 200)
-                            Text("On This Day.")
-                                .font(.title)
-                            Text("by")
-                                .font(.caption)
-                            Text("Steve Barnett")
-                                .font(.title2)
+                            Text("On This Day.").font(.title)
+                            Text("by").font(.caption)
+                            Text("Steve Barnett").font(.title2)
                         }.padding(.vertical, 15)
                         Spacer()
                     }

@@ -1,6 +1,11 @@
 // Project: OnThisDay-iOS
 //
-//  
+//  Responsible for the display of the segmented control that the user uses to
+//  select which type of event they want displayed. There are system options
+//  that allow the user to disable some of the buttons. This is handled here.
+//
+//  Also, when displaying an item in the segmented control, we have the option
+//  to display a count of the items for that event type.
 //
 
 import SwiftUI
@@ -41,6 +46,9 @@ struct EventTypePicker: View {
         ).pickerStyle(.segmented)
     }
     
+    /// Sets the caption text for a specific event type in the segmented control
+    /// - Parameter event: The event to be displayed
+    /// - Returns: The caption text, customisewd to include or exclude the count of matching items
     func buttonCaption(for event: EventType) -> String {
         let baseLabel = "\(event.rawValue)"
         let count = eventCount(for: event)
@@ -51,6 +59,9 @@ struct EventTypePicker: View {
         return "\(baseLabel): \(eventCount(for: event))"
     }
     
+    /// Returns the count of the matching items for a specific event type.
+    /// - Parameter event: The event that we want the count for
+    /// - Returns: The number of items in this event.
     func eventCount(for event: EventType) -> Int {
         appState.countFor(eventType: event, date: eventDate == "" ? nil : eventDate)
     }

@@ -1,4 +1,8 @@
 // Project: OnThisDay-iOS
+//
+//  Presents a very basic web view that we can use to display the contents associated
+//  with the currently selected event.
+//
 
 import SwiftUI
 import WebKit

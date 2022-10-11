@@ -1,6 +1,6 @@
 // Project: OnThisDay-iOS
 //
-//  
+//  Defines the popup button content for a dismiss button on a popup sheet.
 //
 
 import SwiftUI

@@ -1,13 +1,14 @@
 // Project: OnThisDay-iOS
 //
-//  
+//  This is the home view that controlls everything else. It presents the
+//  event list on the left and the event detail on the right.
 //
 
 import SwiftUI
 
 struct ContentView: View {
     
-    @State var selectedEvent: Event?  // = Event.sampleEvent
+    @State var selectedEvent: Event?
     
     var body: some View {
         NavigationView {

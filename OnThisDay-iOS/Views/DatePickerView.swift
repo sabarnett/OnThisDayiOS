@@ -1,6 +1,9 @@
 // Project: OnThisDay-iOS
 //
-//  
+//  Displays a popup window that the user can use to select the date to be displayed
+//  in the event list. In addition to selecting a new date, we retain a list of the
+//  previously selected dates, so the user can re-select one that they have already
+//  fetched.
 //
 
 import SwiftUI
@@ -12,32 +15,33 @@ struct DatePickerView: View {
     @SceneStorage("eventDate") var eventDate = ""
     
     @Binding var pickerShown: Bool
+    
     @State var selectedMonth: String = "January"
     @State var selectedDay: Int = 0
     
     var body: some View {
         VStack {
             HStack {
+                Text("Month: ")
                 Picker(selection: $selectedMonth, content: {
                     ForEach(DateParts.englishMonthNames, id: \.self) { name in
                         Text(name).tag(name)
                     }
-                }, label: {Text("Select a month")})
+                }, label: {
+                    Text("Select a month")
+                })
                 .pickerStyle(.menu)
-                .padding(.horizontal, 10)
-                .foregroundColor(.primary)
-                .border(.secondary, width: 1)
                 
+                Text("Day: ")
                 Picker(selection: $selectedDay, content: {
                     ForEach(1...DateParts.daysPerMonth(selectedMonth), id: \.self) { day in
                         Text("\(day)").tag(day)
                     }
-                }, label: {Text("Select a Day")})
+                }, label: {
+                    Text("Select a Day")
+                })
                 .pickerStyle(.menu)
-                .padding(.horizontal, 10)
-                .foregroundColor(.primary)
-                .border(.secondary, width: 1)
-
+                
                 Button("Go") {
                     // Set the date selection
                     eventDate = "\(selectedMonth) \(selectedDay)"
@@ -63,9 +67,9 @@ struct DatePickerView: View {
 }
 
 struct DatePickerView_Previews: PreviewProvider {
-
+    
     @StateObject static var appState = AppState(isPreview: true)
-
+    
     static var previews: some View {
         DatePickerView(pickerShown: .constant(true))
             .environmentObject(appState)

@@ -1,6 +1,9 @@
 // Project: OnThisDay-iOS
 //
-//  
+//  Displays the details of an event. We have some basic text, including the year
+//  and a description of the event. Following that, we have a series of buttons
+//  that will lead to web links. Below that, we have a web view that we display the
+//  web content in.
 //
 
 import SwiftUI
@@ -15,13 +18,8 @@ struct EventDetailView: View {
     
     @StateObject private var model = WebViewModel()
     
-    var evt: Event {
-        event!
-    }
-    
-    var selectionDate: String? {
-        eventDate == "" ? nil : eventDate
-    }
+    var evt: Event { event! }
+    var selectionDate: String? { eventDate == "" ? nil : eventDate }
     
     var body: some View {
         if event == nil {
@@ -61,10 +59,8 @@ struct EventDetailView: View {
                 }.padding()
 
             }.frame(
-                minWidth: 0,
-                maxWidth: .infinity,
-                minHeight: 0,
-                maxHeight: .infinity,
+                minWidth: 0, maxWidth: .infinity,
+                minHeight: 0, maxHeight: .infinity,
                 alignment: .topLeading
             )
             .navigationBarTitle("\(evt.year)")
@@ -83,7 +79,6 @@ struct EventDetailView: View {
             }
         }
     }
-    
 }
 
 struct EventDetailView_Previews: PreviewProvider {

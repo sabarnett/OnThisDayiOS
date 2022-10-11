@@ -1,3 +1,8 @@
+// Project: OnThisDay-iOS
+//
+//  Presents the user with a list of the events for the selected date, limited
+//  to the specific event type.
+//
 
 import SwiftUI
 
@@ -7,7 +12,6 @@ struct EventListView: View {
     
     @SceneStorage("eventDate") var eventDate = ""
 
-    
     @State private var selectedEventType: EventType = .events
     @State private var showDatePicker: Bool = false
     @State private var showOptions: Bool = false
@@ -19,6 +23,9 @@ struct EventListView: View {
         eventDate == "" ? nil : eventDate
     }
     
+    /// Returns the events that match the specific event type that is currently selected. If we are still
+    /// loading the events, then we also clear the currently selected event and the currently selected
+    /// row. This will force clear the details pane and the row highlight.
     var events: [Event] {
         if appState.isLoading {
             selectedEvent = nil
@@ -35,13 +42,10 @@ struct EventListView: View {
                 .padding(.horizontal, 20)
                 .padding(.vertical, 10)
             
+            // If loading, present a loading placeholder. Otherwise, present
+            // the list of events.
             if appState.isLoading {
-                Spacer()
-                ProgressView()
-                    .scaleEffect(2)
-                    .padding(.bottom, 15)
-                Text("Loading historical information")
-                Spacer()
+                LoadingPlaceholder()
             } else {
                 List(events, selection: $selectedRow) { event in
                     EventListCell(event: event)
@@ -53,39 +57,51 @@ struct EventListView: View {
                                            ? Color(.systemGroupedBackground)
                                            : Color(.systemBackground))
                 }.listStyle(.plain)
-                                  
             }
         }
         .navigationBarTitle(selectionDate ?? appState.today)
         .navigationBarTitleDisplayMode(.large)
-        .navigationBarItems(
-            trailing:
-                HStack(spacing: 15) {
-                    Button {
-                        showDatePicker = true
-                    } label: {
-                        Image(systemName: "calendar")
-                            .scaleEffect(1.3)
-                    }
-                    .popover(isPresented: $showDatePicker, arrowEdge: .top) {
-                        DatePickerView(pickerShown: $showDatePicker)
-                            .frame(minWidth: 260, idealWidth: 280, maxWidth: 280, minHeight: 200, idealHeight: 200, maxHeight: 220)
-                    }
-                    
-                    Button {
-                        showOptions = true
-                    } label: {
-                        Image(systemName: "gear")
-                            .scaleEffect(1.3)
-                    }
-                    .sheet(isPresented: $showOptions) {
-                        OptionsView()
-                    }
-                })
+        .navigationBarItems(trailing: toolbarTrailingItems())
         .onChange(of: eventDate, perform: { date in
             selectedRow = nil
             selectedEvent = nil
         })
+    }
+    
+    fileprivate func LoadingPlaceholder() -> some View {
+        VStack {
+            Spacer()
+            ProgressView()
+                .scaleEffect(2)
+                .padding(.bottom, 15)
+            Text("Loading historical information")
+            Spacer()
+        }
+    }
+    
+    fileprivate func toolbarTrailingItems() -> some View {
+        HStack(spacing: 15) {
+            Button {
+                showDatePicker = true
+            } label: {
+                Image(systemName: "calendar")
+                    .scaleEffect(1.3)
+            }
+            .popover(isPresented: $showDatePicker, arrowEdge: .top) {
+                DatePickerView(pickerShown: $showDatePicker)
+                    .frame(minWidth: 360, idealWidth: 380, maxWidth: 480, minHeight: 200, idealHeight: 200, maxHeight: 220)
+            }
+            
+            Button {
+                showOptions = true
+            } label: {
+                Image(systemName: "gear")
+                    .scaleEffect(1.3)
+            }
+            .sheet(isPresented: $showOptions) {
+                OptionsView()
+            }
+        }
     }
 }
 

@@ -1,6 +1,7 @@
 // Project: OnThisDay-iOS
 //
-//  
+//  Defines the content of an individual event when displayed in the list of
+//  events. 
 //
 
 import SwiftUI
