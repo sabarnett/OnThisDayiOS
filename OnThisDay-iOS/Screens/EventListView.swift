@@ -54,7 +54,7 @@ struct EventListView: View {
                             selectedEvent = event
                         }
                         .listRowBackground(self.selectedRow == event.id
-                                           ? Color(.systemGroupedBackground)
+                                           ? Color(.systemBlue).opacity(0.5)
                                            : Color(.systemBackground))
                 }.listStyle(.plain)
             }
