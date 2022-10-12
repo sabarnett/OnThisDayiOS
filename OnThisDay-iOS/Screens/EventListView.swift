@@ -95,7 +95,7 @@ struct EventListView: View {
             Button {
                 showOptions = true
             } label: {
-                Image(systemName: "gear")
+                Image(systemName: "gearshape")
                     .scaleEffect(1.3)
             }
             .sheet(isPresented: $showOptions) {
