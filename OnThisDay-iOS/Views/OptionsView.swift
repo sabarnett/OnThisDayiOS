@@ -39,21 +39,6 @@ struct OptionsView: View {
                         })
                     }
                 }
-                
-                Section(header: Text("About On This Day").bold()) {
-                    HStack {
-                        Spacer()
-                        VStack(alignment: .center) {
-                            Image("LaunchScreenLogo")
-                                .resizable()
-                                .frame(width: 200, height: 200)
-                            Text("On This Day.").font(.title)
-                            Text("by").font(.caption)
-                            Text("Steve Barnett").font(.title2)
-                        }.padding(.vertical, 15)
-                        Spacer()
-                    }
-                }
             }
         }
         .overlay(alignment: .topTrailing) {

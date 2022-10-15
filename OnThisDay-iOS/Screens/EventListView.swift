@@ -15,6 +15,7 @@ struct EventListView: View {
     @State private var selectedEventType: EventType = .events
     @State private var showDatePicker: Bool = false
     @State private var showOptions: Bool = false
+    @State private var showInfo:Bool = false
     @State private var selectedRow: UUID?
     
     @Binding var selectedEvent: Event?
@@ -85,7 +86,7 @@ struct EventListView: View {
                 showDatePicker = true
             } label: {
                 Image(systemName: "calendar")
-                    .scaleEffect(1.3)
+                    .scaleEffect(1.1)
             }
             .popover(isPresented: $showDatePicker, arrowEdge: .top) {
                 DatePickerView(pickerShown: $showDatePicker)
@@ -96,10 +97,20 @@ struct EventListView: View {
                 showOptions = true
             } label: {
                 Image(systemName: "gearshape")
-                    .scaleEffect(1.3)
+                    .scaleEffect(1.1)
             }
             .sheet(isPresented: $showOptions) {
                 OptionsView()
+            }
+            
+            Button {
+                showInfo = true
+            } label: {
+                Image(systemName: "info.circle")
+                    .scaleEffect(1.1)
+            }
+            .sheet(isPresented: $showInfo) {
+                InfoView()
             }
         }
     }

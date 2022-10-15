@@ -29,6 +29,8 @@
 		E8CE202928E714B8006E5BC4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CE202828E714B8006E5BC4 /* ContentView.swift */; };
 		E8CE202B28E714BA006E5BC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8CE202A28E714BA006E5BC4 /* Assets.xcassets */; };
 		E8CE202E28E714BA006E5BC4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8CE202D28E714BA006E5BC4 /* Preview Assets.xcassets */; };
+		E8DC042328FAD56500C77D34 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DC042228FAD56500C77D34 /* InfoView.swift */; };
+		E8DC042528FAD8BD00C77D34 /* Bundle+Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DC042428FAD8BD00C77D34 /* Bundle+Version.swift */; };
 		E8FAE4F728F44A6F00D0DF21 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8FAE4F628F44A6F00D0DF21 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +58,8 @@
 		E8CE202828E714B8006E5BC4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E8CE202A28E714BA006E5BC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8CE202D28E714BA006E5BC4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E8DC042228FAD56500C77D34 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		E8DC042428FAD8BD00C77D34 /* Bundle+Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Version.swift"; sourceTree = "<group>"; };
 		E8FAE4F628F44A6F00D0DF21 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,6 +83,7 @@
 				E8BAB47D28F05F3500F8FD9F /* WebView.swift */,
 				E87A787D28F59B1400AA2025 /* OptionsView.swift */,
 				E87A787F28F59C0B00AA2025 /* PopupDismissButton.swift */,
+				E8DC042228FAD56500C77D34 /* InfoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -88,6 +93,7 @@
 			children = (
 				E860353E28E7238C00E2A921 /* String+Decoded.swift */,
 				E8BEF46A28EF1A9100644DEA /* Color+Constants.swift */,
+				E8DC042428FAD8BD00C77D34 /* Bundle+Version.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -252,6 +258,7 @@
 				E860353D28E722C400E2A921 /* AppState.swift in Sources */,
 				E8BEF46B28EF1A9100644DEA /* Color+Constants.swift in Sources */,
 				E860353328E721CE00E2A921 /* Networking.swift in Sources */,
+				E8DC042328FAD56500C77D34 /* InfoView.swift in Sources */,
 				E860353528E7222700E2A921 /* EventLink.swift in Sources */,
 				E860352E28E7173A00E2A921 /* EventListView.swift in Sources */,
 				E8B808CC28E9881A00DA9C53 /* DatePickerView.swift in Sources */,
@@ -259,6 +266,7 @@
 				E8BAB47E28F05F3500F8FD9F /* WebView.swift in Sources */,
 				E860353128E71EB400E2A921 /* EventTypePicker.swift in Sources */,
 				E860353B28E7229D00E2A921 /* Day.swift in Sources */,
+				E8DC042528FAD8BD00C77D34 /* Bundle+Version.swift in Sources */,
 				E860353728E7224C00E2A921 /* Event.swift in Sources */,
 				E87A788028F59C0B00AA2025 /* PopupDismissButton.swift in Sources */,
 				E860353F28E7238C00E2A921 /* String+Decoded.swift in Sources */,
